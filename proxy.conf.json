@@ -1,0 +1,7 @@
+{
+  "/movietitles/*": {
+    "target": "http://localhost:8700",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
