@@ -17,5 +17,5 @@ script:
   - docker build -t $REPO .
 after_success:
   - docker images
-  - docker login -e="swarooprajg@gmail.com" -u="swarooprajg" -p="Tourpark"
+  - docker login -e="swarooprajg@gmail.com" -u="swarooprajg" -p="swaroop123"
   - docker push $REPO
