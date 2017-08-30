@@ -1,16 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
 <md-toolbar color="primary" layout="row" layout-align="space-around center">
   <button md-button>
     <md-icon>menu</md-icon>
   </button>
-  <!--The left side-->
-  <h1>{{title}}</h1>
+  <a>{{title}} - Telugu Movie Names</a>
 </md-toolbar>
-<div style="text-align:center">
-  <h2>Telugu Movie Names</h2>
-  <button md-raised-button color="primary" (click)="reloadPage()">Next Charade!</button>
-</div>
-<div style="text-align:center">
-  <app-charade-info [charadeInfo]="selectedCharade"></app-charade-info>
+<div class="panel panel-primary" style="height: 100%">
+  <div class="panel-body">
+    <app-charade-info [charadeInfo]="selectedCharade"></app-charade-info>
+    <div style="text-align:center;">
+      <button md-raised-button color="primary" style="min-width: 200px; font-size: large; border-radius: 4px; line-height: 42px;"
+              (click)="reloadPage()">Next Charade!</button>
+    </div>
+  </div>
 </div>
