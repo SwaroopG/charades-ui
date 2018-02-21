@@ -34,7 +34,8 @@ body {
   font-size: small;
 }
 
-.label-primary-color {
+.label-primary {
+  line-height: 2rem;
   color: #20c997;
 }
 
