@@ -1,7 +1,7 @@
 sudo: required
 language: node_js
 node_js:
-  - "7.9"
+  - "8"
 services:
   - docker
 branches:
@@ -17,5 +17,5 @@ script:
   - docker build -t $REPO .
 after_success:
   - docker images
-  - docker login -e="swarooprajg@gmail.com" -u="swarooprajg" -p="swaroop123"
+  - docker login -e="swarooprajg@gmail.com" -u="swarooprajg" -p="sabha123"
   - docker push $REPO
