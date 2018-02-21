@@ -1,5 +1,5 @@
 #  Create a new image from the base nodejs 7 image.
-FROM node:7.9.0
+FROM node:latest
 MAINTAINER swarooprajg@gmail.com
 # Create the target directory in the imahge
 RUN mkdir -p /usr/src/app

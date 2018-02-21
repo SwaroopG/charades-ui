@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 import { CharadeInfoComponent } from './charade-info/charade-info.component';
 import {CharadeService} from "./charade.service";
 
-import { MaterialModule, MdList, MdListItem } from '@angular/material'
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -20,9 +19,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
     BrowserAnimationsModule,
-    MdButtonModule, MdCheckboxModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   providers: [CharadeService],
   bootstrap: [AppComponent]
